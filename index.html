@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-bg">
+    <main class="center-wrap">
+      <section class="todo-card" aria-label="Todo List App">
+        <h1 class="title">Todo List</h1>
+
+        <form id="todoForm" class="input-row" autocomplete="off">
+          <input id="taskInput" class="txt" type="text" placeholder="Add a todo . . ." />
+          <input id="dateInput" class="date" type="date" />
+          <button id="addBtn" class="plus" type="submit" title="Add task">+</button>
+        </form>
+
+        <div class="controls">
+          <button id="filterBtn" class="btn filter">FILTER</button>
+          <button id="deleteAllBtn" class="btn delete">DELETE ALL</button>
+        </div>
+
+        <div class="table-wrap">
+          <table class="todo-table" role="table" aria-label="Todo list">
+            <thead>
+              <tr>
+                <th>TASK</th>
+                <th>DUE DATE</th>
+                <th>STATUS</th>
+                <th>ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody id="todoList">
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
